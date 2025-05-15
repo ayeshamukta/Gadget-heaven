@@ -6,7 +6,7 @@ import { NavLink, useLocation } from 'react-router';
 const Navbar = () => {
     const [backGround, setBackGround] = useState(null);
      const location = useLocation();
-        console.log(location);
+        // console.log(location);
 
     useEffect(() => {
         if (location.pathname == '/home' || location.pathname == '/') {

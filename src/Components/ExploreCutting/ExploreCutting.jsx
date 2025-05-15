@@ -9,8 +9,8 @@ const ExploreCutting = () => {
     // console.log(loadedData);
     
     return (
-        <div>
-            <h1>Explore Cutting-Edge Gadgets</h1>
+        <div className='text-center lg:w-[70vw]  mx-auto'>
+            <h1 className='text-4xl font-bold mb-10'>Explore Cutting-Edge Gadgets</h1>
             <div className='grid grid-cols-4 gap-5'>
                 <div className='shadow-2xl flex flex-col p-8 h-min gap-5  rounded-2xl'>
                     <button className="btn rounded-full">All Products</button>
