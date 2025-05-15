@@ -12,6 +12,7 @@ import Home from './Components/Home/Home.jsx';
 import Statics from './Components/Statics/Statics.jsx';
 import Dashboard from './Components/Dashboard/Dashboard.jsx';
 import ExploreCutting from './Components/ExploreCutting/ExploreCutting.jsx';
+import ProductDetails from './Components/ProductDetails/ProductDetails.jsx';
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,11 @@ const router = createBrowserRouter([
         path:'/explore',
         loader:()=>fetch('/data.json'),
         element:<ExploreCutting></ExploreCutting>
+      },
+      {
+        path:'/explore/:productId',
+        loader:()=>fetch('/data.json'),
+        element:<ProductDetails></ProductDetails>
       },
     ]
   },

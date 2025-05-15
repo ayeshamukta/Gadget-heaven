@@ -1,23 +1,39 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { GiSelfLove } from 'react-icons/gi';
 import { IoCartOutline } from 'react-icons/io5';
-import { NavLink } from 'react-router';
+import { NavLink, useLocation } from 'react-router';
 
 const Navbar = () => {
-    const [backGround,setBackGround] = useState(true);
-    const handleBg=(status)=>
-    {
-        if(status === 'statistics' || status ==='dashBoard')
-        {
-            setBackGround(false)
-        }
-        else
-        {
+    const [backGround, setBackGround] = useState(null);
+     const location = useLocation();
+        console.log(location);
+
+    useEffect(() => {
+        if (location.pathname == '/home' || location.pathname == '/') {
             setBackGround(true)
         }
-    }
+        else {
+            setBackGround(false)
+        }
+    }, [location.pathname])
+    
+    
+    // const handleBg = () => {
+       
+
+    //     if (location.pathname == '/home' || location.pathname == '/') {
+    //         setBackGround(true)
+    //     }
+    //     else {
+    //         setBackGround(false)
+    //     }
+
+    // }
+
+
+
     return (
-        <div className={`navbar ${backGround?'bg-[#9538E2] mt-4 rounded-t-2xl text-white':'bg-white text-black'} `}>
+        <div className={`navbar ${backGround ? 'bg-[#9538E2] mt-4 rounded-t-2xl text-white' : 'bg-white text-black'} `}>
             <div className="navbar-start">
                 {/* <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -42,11 +58,11 @@ const Navbar = () => {
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal gap-4  px-1">
                     {/* <li><a>Home</a></li> */}
-                    <NavLink onClick={()=>handleBg('home')} className={({isActive})=> isActive?'link underline font-bold':'null'} to={'/home'}>Home</NavLink>
+                    <NavLink  className={({ isActive }) => isActive ? 'link underline font-bold' : 'null'} to={'/home'}>Home</NavLink>
                     {/* <NavLink className={({isActive})=> isActive?`link underline font-bold ${()=>setBackGround(!backGround)}`:`null`} to={'/statics'}>Statics</NavLink> */}
-                    <NavLink onClick={()=>handleBg('statistics')} className={({isActive})=> isActive?`link underline font-bold`:`null`} to={'/statics'}>Statics</NavLink>
-                    <NavLink onClick={()=>handleBg('dashBoard')} className={({isActive})=> isActive?'link font-bold underline':'null'} to={'/dashboard'}>Dashboard</NavLink>
-                    
+                    <NavLink  className={({ isActive }) => isActive ? `link underline font-bold` : `null`} to={'/statics'}>Statics</NavLink>
+                    <NavLink  className={({ isActive }) => isActive ? 'link font-bold underline' : 'null'} to={'/dashboard'}>Dashboard</NavLink>
+
                     {/* <li><a>Dashboard</a></li> */}
                 </ul>
             </div>
