@@ -2,7 +2,7 @@
   {
     "product_id": "P001",
     "product_title": "Apple iPhone 15 Pro Max",
-    "product_image": "https://example.com/iphone15promax.jpg",
+    "product_image": "https://iili.io/3gbMAPI.md.jpg",
     "category": "Smartphones",
     "price": 1299,
     "description": "Experience the ultimate smartphone with the iPhone 15 Pro Max.",
@@ -19,7 +19,7 @@
   {
     "product_id": "P002",
     "product_title": "Samsung Galaxy S24 Ultra",
-    "product_image": "https://example.com/galaxys24ultra.jpg",
+    "product_image": "https://iili.io/3gy2nx2.md.jpg",
     "category": "Smartphones",
     "price": 1199,
     "description": "Redefine your smartphone experience with the Galaxy S24 Ultra.",
@@ -36,7 +36,7 @@
   {
     "product_id": "P003",
     "product_title": "Google Pixel 8 Pro",
-    "product_image": "https://example.com/pixel8pro.jpg",
+    "product_image": "https://iili.io/3gyXD6x.md.jpg",
     "category": "Smartphones",
     "price": 999,
     "description": "The smartest and most helpful Pixel yet.",
@@ -53,7 +53,7 @@
   {
     "product_id": "P004",
     "product_title": "OnePlus 12",
-    "product_image": "https://example.com/oneplus12.jpg",
+    "product_image": "https://iili.io/3gymFx1.md.jpg",
     "category": "Smartphones",
     "price": 799,
     "description": "Fast and smooth performance with a stunning display.",
@@ -70,7 +70,7 @@
   {
     "product_id": "P005",
     "product_title": "Dell XPS 15",
-    "product_image": "https://example.com/dellxps15.jpg",
+    "product_image": "https://iili.io/3r92wZl.md.jpg",
     "category": "Laptops",
     "price": 1899,
     "description": "Powerful and sleek laptop designed for professionals.",
@@ -87,7 +87,7 @@
   {
     "product_id": "P006",
     "product_title": "MacBook Pro 16-inch M3",
-    "product_image": "https://example.com/macbookpro16m3.jpg",
+    "product_image": "https://iili.io/3r9BScB.md.jpg",
     "category": "Laptops",
     "price": 2799,
     "description": "The most powerful MacBook ever made.",
@@ -104,7 +104,7 @@
   {
     "product_id": "P007",
     "product_title": "HP Spectre x360 14",
-    "product_image": "https://example.com/hpspectre.jpg",
+    "product_image": "https://iili.io/3r9xtXn.md.jpg",
     "category": "Laptops",
     "price": 1399,
     "description": "Flexible and portable 2-in-1 laptop.",
@@ -121,7 +121,7 @@
   {
     "product_id": "P008",
     "product_title": "Sony WH-1000XM5",
-    "product_image": "https://example.com/sonywh1000xm5.jpg",
+    "product_image": "https://iili.io/3r9Ef0N.md.jp",
     "category": "Audio",
     "price": 399,
     "description": "Industry-leading noise cancellation headphones.",
@@ -138,7 +138,7 @@
   {
     "product_id": "P009",
     "product_title": "Bose QuietComfort Ultra",
-    "product_image": "https://example.com/boseqc.jpg",
+    "product_image": "https://iili.io/3r960Xf.md.jpg",
     "category": "Audio",
     "price": 429,
     "description": "Premium comfort with immersive audio.",
@@ -155,7 +155,7 @@
   {
     "product_id": "P010",
     "product_title": "Logitech MX Master 3S",
-    "product_image": "https://example.com/mxmaster3s.jpg",
+    "product_image": "https://iili.io/3r9y31n.md.jpg",
     "category": "Accessories",
     "price": 99,
     "description": "The ultimate productivity mouse.",
@@ -172,7 +172,7 @@
   {
     "product_id": "P011",
     "product_title": "Apple Watch Series 9",
-    "product_image": "https://example.com/applewatch9.jpg",
+    "product_image": "https://iili.io/3rHyWSs.md.jpg",
     "category": "Wearables",
     "price": 399,
     "description": "A healthier, more connected future.",
@@ -189,7 +189,7 @@
   {
     "product_id": "P012",
     "product_title": "Samsung Galaxy Watch 6",
-    "product_image": "https://example.com/galaxywatch6.jpg",
+    "product_image": "https://iili.io/3rHRpKF.md.jpg",
     "category": "Wearables",
     "price": 329,
     "description": "Track your fitness in style.",
@@ -206,7 +206,7 @@
   {
     "product_id": "P013",
     "product_title": "Canon EOS R7 Mirrorless Camera",
-    "product_image": "https://example.com/canonr7.jpg",
+    "product_image": "https://iili.io/3rHZ6R2.md.jpg",
     "category": "Cameras",
     "price": 1499,
     "description": "High-speed APS-C camera for serious creators.",
@@ -223,7 +223,7 @@
   {
     "product_id": "P014",
     "product_title": "GoPro HERO12 Black",
-    "product_image": "https://example.com/gopro12.jpg",
+    "product_image": "https://iili.io/3rJBPou.md.jpg",
     "category": "Cameras",
     "price": 399,
     "description": "Capture your adventures in stunning 5.3K.",
@@ -240,7 +240,7 @@
   {
     "product_id": "P015",
     "product_title": "Nintendo Switch OLED",
-    "product_image": "https://example.com/switcholed.jpg",
+    "product_image": "https://iili.io/3rHvumx.md.jpg",
     "category": "Gaming",
     "price": 349,
     "description": "Play at home or on the go with a vibrant OLED display.",
