@@ -7,10 +7,10 @@ const CartProduct = ({item}) => {
     return (
         
             <div className="min-h shadow-2xl rounded-2xl">
-                <div className=" flex gap-5 flex-col lg:flex-row">
-                    <img
+                <div className=" flex gap-5 flex-col  lg:flex-row">
+                    <img className="w-48 h-32 p-4 rounded-2xl"
                         src={product_image}
-                        className="w-48 h-32 p-2 rounded-2xl "
+                        
                     />
                     <div className='my-auto lg:w-screen items-center'>
                         <div className='flex justify-between'>
