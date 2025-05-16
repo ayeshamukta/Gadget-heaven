@@ -1,5 +1,6 @@
 import React from 'react';
 import './footer.css'
+import { Link } from 'react-router';
 
 const Footer = () => {
     return (
@@ -19,6 +20,8 @@ const Footer = () => {
                     </nav>
                     <nav className='flex flex-col'>
                         <h6 className="font-bold text-lg text-black mb-3">Company</h6>
+                        <Link to={'/blog'} className="link link-hover">Blog</Link>
+                        
                         <a className="link link-hover">About us</a>
                         <a className="link link-hover">Careers</a>
                         <a className="link link-hover">Contact</a>

@@ -14,6 +14,7 @@ import Dashboard from './Components/Dashboard/Dashboard.jsx';
 import ExploreCutting from './Components/ExploreCutting/ExploreCutting.jsx';
 import ProductDetails from './Components/ProductDetails/ProductDetails.jsx';
 import ErrorPage from './Components/ErrorPage/ErrorPage.jsx';
+import Blog from './Components/Blog/Blog.jsx';
 
 const router = createBrowserRouter([
   {
@@ -50,6 +51,11 @@ const router = createBrowserRouter([
         path:'/explore/:productId',
         loader:()=>fetch('/data.json'),
         element:<ProductDetails></ProductDetails>
+      },
+      {
+        path:'/blog',
+        
+        element:<Blog></Blog>
       },
     ]
   },
