@@ -38,10 +38,11 @@ const getWishList = () => {
     }
 }
 
-const addToWishList = (id) => {
+const addToWishList = (id,setButtonDisable) => {
     const wishListData = getWishList();
 
     if (wishListData.includes(id)) {
+        setButtonDisable(true);
         console.log('already in wish list');
 
     }
