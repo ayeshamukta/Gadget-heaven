@@ -31,6 +31,7 @@ const router = createBrowserRouter([
       },
       {
         path:'/statics',
+        loader:()=>fetch('/data.json'),
         element:<Statics></Statics>
       },
       {
