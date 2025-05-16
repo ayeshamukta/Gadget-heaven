@@ -25,8 +25,8 @@ const Statics = () => {
                     <YAxis></YAxis>
                     {/* <Tooltip /> */}
                     <Legend />
-                    <Area type="monotone" dataKey="price" fill="#8884d8" stroke="#8884d8" />
-                    <Bar dataKey="price" barSize={20} fill="#413ea0" activeBar={<Rectangle fill="#9538E2" stroke="black" />} />
+                    <Area type="monotone" dataKey="price" fill="#8884d8" stroke="#9538E2/15" />
+                    <Bar dataKey="price" barSize={20} fill="#9538E2" activeBar={<Rectangle fill="#9538E2" stroke="black" />} />
                     
                 </ComposedChart>
 
