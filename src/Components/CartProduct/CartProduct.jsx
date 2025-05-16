@@ -9,10 +9,12 @@ const CartProduct = ({item,setCartList}) => {
         
             <div className="min-h shadow-2xl rounded-2xl">
                 <div className=" flex gap-5 flex-col  lg:flex-row">
-                    <img className="w-48 h-32 p-4 rounded-2xl"
+                    <div>
+                        <img className="w-48 h-32 p-4 rounded-2xl"
                         src={product_image}
                         
                     />
+                    </div>
                     <div className='my-auto lg:w-screen items-center'>
                         <div className='flex justify-between'>
                             <h1 className="text-2xl mb-3 font-bold">{product_title}</h1>
