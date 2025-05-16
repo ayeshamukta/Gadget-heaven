@@ -1,3 +1,5 @@
+import { toast } from "react-toastify";
+
 const getCartData = () => {
     const data = localStorage.getItem('cart-list')
     if (data) {
@@ -13,10 +15,12 @@ const getCartData = () => {
 const addToCart = (id) => {
     const storedData = getCartData();
     if (storedData.includes(id)) {
+        toast('Already Existed')
         console.log('already existed');
     }
     else {
         storedData.push(id)
+        toast('Added to the cart.')
         const storedDataStr = JSON.stringify(storedData)
         localStorage.setItem('cart-list', storedDataStr)
 
@@ -43,11 +47,13 @@ const addToWishList = (id,setButtonDisable) => {
 
     if (wishListData.includes(id)) {
         setButtonDisable(true);
+        // toast('Already in Wish-list')
         console.log('already in wish list');
 
     }
     else {
         wishListData.push(id)
+        toast('Congrats! added to the wishlist')
         const wishListStr = JSON.stringify(wishListData)
         localStorage.setItem('wish-list', wishListStr)
     }

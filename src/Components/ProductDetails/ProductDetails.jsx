@@ -4,6 +4,7 @@ import { CiStar, CiShoppingCart } from "react-icons/ci";
 import { FaStar } from "react-icons/fa6";
 import { GiSelfLove } from "react-icons/gi";
 import { addToCart, addToWishList } from '../Utility/Utility';
+import { ToastContainer, toast } from 'react-toastify';
 
 const ProductDetails = () => {
     const data = useLoaderData();
@@ -68,6 +69,7 @@ const ProductDetails = () => {
                             </div>
                             <div className='flex gap-3'>
                                 <button onClick={()=>addToCart(paramId.productId)} className="btn font-bold text-white rounded-full bg-[#9538E2] items-center">Add to Cart <CiShoppingCart className='font-bold text-xl'/></button>
+                                <ToastContainer></ToastContainer>
                                 <button disabled={buttonDisable} onClick={()=>addToWishList(paramId.productId,setButtonDisable)} className={`${buttonDisable?'disabled:opacity-50 disabled:cursor-not-allowed pointer-events-none':'' } `}><GiSelfLove  className='btn bg-base-300 rounded-full p-2' /></button>
                                 
                             </div>
