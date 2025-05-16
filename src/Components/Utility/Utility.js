@@ -53,6 +53,16 @@ const addToWishList = (id) => {
 }
 
 
+const updateCart=(id)=>
+{
+    const storedData = getCartData();
+
+    const updatedList = storedData.filter(itemId=> itemId !== id)
+    const updatedListStr = JSON.stringify(updatedList)
+    localStorage.setItem('cart-list',updatedListStr)
+
+}
 
 
-export { addToCart, addToWishList, getCartData, getWishList}
+
+export { addToCart, addToWishList, getCartData, getWishList,updateCart}

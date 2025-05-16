@@ -55,7 +55,7 @@ const Dashboard = () => {
             </div>
 
             <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
-                {/* tab1 */}
+                
                 <TabPanel>
                     <div className='flex justify-between font-bold text-xl mt-8 items-center'>
                         <h1 className=''>Cart</h1>
@@ -67,7 +67,7 @@ const Dashboard = () => {
                     </div>
                     <div className='flex flex-col py-10 gap-8'>
                         {
-                            cartListData.map(item => <CartProduct item={item}></CartProduct>)
+                            cartListData.map(item => <CartProduct setCartList={setCartList} item={item}></CartProduct>)
                         }
                     </div>
                 </TabPanel>
@@ -77,7 +77,7 @@ const Dashboard = () => {
                     <h1 className='font-bold text-xl mt-10'>Wishlist</h1>
                     <div className='flex flex-col py-5 gap-8'>
                         {
-                            wishListData.map(item => <WishProduct item={item}></WishProduct>)
+                            wishListData.map(item => <WishProduct setCartList={setCartList} item={item}></WishProduct>)
                         }
                     </div>
                 </TabPanel>
