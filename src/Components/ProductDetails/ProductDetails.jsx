@@ -3,6 +3,7 @@ import { useLoaderData, useParams } from 'react-router';
 import { CiStar, CiShoppingCart } from "react-icons/ci";
 import { FaStar } from "react-icons/fa6";
 import { GiSelfLove } from "react-icons/gi";
+import { addToCart, addToWishList } from '../Utility/Utility';
 
 const ProductDetails = () => {
     const data = useLoaderData();
@@ -64,8 +65,8 @@ const ProductDetails = () => {
                                 <button className='badge bg-base-300 rounded-full border shadow-2xl bg-base-400'>{rating}</button>
                             </div>
                             <div className='flex gap-3'>
-                                <button className="btn font-bold text-white rounded-full bg-[#9538E2] items-center">Add to Cart <CiShoppingCart className='font-bold text-xl'/></button>
-                                <GiSelfLove className='btn bg-base-300 rounded-full p-2'/>
+                                <button onClick={()=>addToCart(paramId.productId)} className="btn font-bold text-white rounded-full bg-[#9538E2] items-center">Add to Cart <CiShoppingCart className='font-bold text-xl'/></button>
+                                <GiSelfLove onClick={()=>addToWishList(paramId.productId)} className='btn bg-base-300 rounded-full p-2'/>
                             </div>
                         </div>
                     </div>
