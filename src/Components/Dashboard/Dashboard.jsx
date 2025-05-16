@@ -8,6 +8,7 @@ import WishProduct from '../WishProduct/WishProduct';
 const Dashboard = () => {
     const [tabIndex, setTabIndex] = useState(0);
     const [cart_list, setCartList] = useState([]);
+    const[finalCartList,setFinalCartList] = useState([])
 
 
     const allProducts = useLoaderData();
@@ -19,13 +20,18 @@ const Dashboard = () => {
 
 
     const wishList = getWishList()
-    console.log(wishList);
+    // console.log(wishList);
     let totalPrice = 0;
 
 
 
     let cartListData = allProducts.filter(product => cart_list.includes(product.product_id))
+    useEffect(()=>
+    {
+        setFinalCartList(cartListData)
+    },[])
     const wishListData = allProducts.filter(product => wishList.includes(product.product_id))
+    
 
     const handlePurchase = () => {
 
@@ -41,6 +47,19 @@ const Dashboard = () => {
         totalPrice = totalPrice + item.price
     });
 
+    const handleSorting=()=>
+    {
+        const itemLits = [...cartListData].sort((a,b)=>
+                    a.price - b.price
+        )
+        console.log(itemLits);
+        const orderIds = itemLits.map(item=>item.product_id)
+        console.log(orderIds);
+        
+        
+        
+        
+    }
 
 
     return (
@@ -81,7 +100,7 @@ const Dashboard = () => {
                         <h1 className=''>Cart</h1>
                         <div className='flex gap-5 items-center'>
                             <h2>Total Cost : ${totalPrice}</h2>
-                            <button className='btn rounded-full border border-[#8332C5] text-lg text-[#9538E2] font-bold '>Sort bt Price</button>
+                            <button onClick={handleSorting} className='btn rounded-full border border-[#8332C5] text-lg text-[#9538E2] font-bold '>Sort bt Price</button>
                             <button onClick={() => {
                                 handlePurchase();
                                

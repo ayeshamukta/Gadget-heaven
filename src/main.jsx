@@ -13,11 +13,13 @@ import Statics from './Components/Statics/Statics.jsx';
 import Dashboard from './Components/Dashboard/Dashboard.jsx';
 import ExploreCutting from './Components/ExploreCutting/ExploreCutting.jsx';
 import ProductDetails from './Components/ProductDetails/ProductDetails.jsx';
+import ErrorPage from './Components/ErrorPage/ErrorPage.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout></Layout>,
+    errorElement:<ErrorPage></ErrorPage>,
     children:[
       {
         path:'/',
