@@ -1,65 +1,58 @@
-const getCartData =()=>
-{
+const getCartData = () => {
     const data = localStorage.getItem('cart-list')
-    if(data)
-    {
+    if (data) {
         const jsonData = JSON.parse(data)
         return jsonData;
     }
-    else{
+    else {
         return []
     }
 }
 
 
-const addToCart=(id)=>
-{
+const addToCart = (id) => {
     const storedData = getCartData();
-    if(storedData.includes(id))
-    {
-        console.log('already existed');        
+    if (storedData.includes(id)) {
+        console.log('already existed');
     }
-    else
-    {
+    else {
         storedData.push(id)
         const storedDataStr = JSON.stringify(storedData)
-        localStorage.setItem('cart-list',storedDataStr)
+        localStorage.setItem('cart-list', storedDataStr)
 
     }
-    
 
-    
+
+
 }
 
 
-const getWishList= ()=>
-{
+const getWishList = () => {
     const storedWishList = localStorage.getItem('wish-list')
-    if(storedWishList)
-    {
+    if (storedWishList) {
         const wishlist = JSON.parse(storedWishList)
         return wishlist;
     }
-    else{
+    else {
         return []
     }
 }
 
-const addToWishList =(id)=>
-{
+const addToWishList = (id) => {
     const wishListData = getWishList();
 
-    if(wishListData.includes(id))
-    {
+    if (wishListData.includes(id)) {
         console.log('already in wish list');
-        
+
     }
-    else
-    {
+    else {
         wishListData.push(id)
         const wishListStr = JSON.stringify(wishListData)
         localStorage.setItem('wish-list', wishListStr)
     }
 }
 
-export {addToCart, addToWishList, getCartData,getWishList}
+
+
+
+export { addToCart, addToWishList, getCartData, getWishList}
