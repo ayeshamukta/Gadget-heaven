@@ -15,7 +15,7 @@ Welcome to **Gadget Heaven**—a responsive e-commerce platform designed for gad
 This project utilizes several core React concepts:
 
 - **Components**: Modular and reusable components are used throughout the application, making the code organized and scalable.
-- **State Management**: Utilized both `useState` and `useReducer` hooks for local component state management.
+- **State Management**: Utilized both `useState` and `useEffect` hooks for local component state management.
 - **Props**: Leveraged props to pass data between parent and child components, allowing flexible data handling.
 - **Conditional Rendering**: Displayed UI elements conditionally based on user interactions and application state.
 - **React Router**: Implemented client-side routing for seamless navigation between different pages.
