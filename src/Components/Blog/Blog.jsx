@@ -1,8 +1,10 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 const Blog = () => {
     return (
         <div className='space-y-5'>
+            <Helmet><title>Gadget Heaven | Blog</title></Helmet>
             <div className='flex justify-between   items-center mx-auto'>
                 <div>
                     <iframe width="400

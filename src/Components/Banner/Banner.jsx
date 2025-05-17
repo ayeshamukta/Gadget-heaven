@@ -1,6 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router';
 // import {banner} from '../../assets/banner.jpg'
 const Banner = () => {
+
+    const navigate = useNavigate()
     return (
         <div className='relative  h-[800px]'>
             <div className="hero rounded-b-2xl bg-[#9538E2]   mx-auto text-white">
@@ -10,7 +13,7 @@ const Banner = () => {
                         <p className="py-6">
                             Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!
                         </p>
-                        <button className="btn bg-white border  border-white font-bold text-[#9538E2] px-6 rounded-full">Shop Now</button>
+                        <button onClick={()=>navigate('/dashboard')} className="btn bg-white border  border-white font-bold text-[#9538E2] px-6 rounded-full">Shop Now</button>
                     </div>
 
 

@@ -20,42 +20,42 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout></Layout>,
-    errorElement:<ErrorPage></ErrorPage>,
-    children:[
+    errorElement: <ErrorPage></ErrorPage>,
+    children: [
       {
-        path:'/',
-        loader:()=>fetch('/data.json'),
-        element:<Home></Home>
+        path: '/',
+        loader: () => fetch('/data.json'),
+        element: <Home></Home>
       },
       {
-        path:'/home',
-        loader:()=>fetch('/data.json'),
-        element:<Home></Home>
+        path: '/home',
+        loader: () => fetch('/data.json'),
+        element: <Home></Home>
       },
       {
-        path:'/statics',
-        loader:()=>fetch('/data.json'),
-        element:<Statics></Statics>
+        path: '/statics',
+        loader: () => fetch('/data.json'),
+        element: <Statics></Statics>
       },
       {
-        path:'/dashboard',
-        loader:()=>fetch('/data.json'),
-        element:<Dashboard></Dashboard>
+        path: '/dashboard',
+        loader: () => fetch('/data.json'),
+        element: <Dashboard></Dashboard>
       },
       {
-        path:'/explore',
-        loader:()=>fetch('/data.json'),
-        element:<ExploreCutting></ExploreCutting>
+        path: '/explore',
+        loader: () => fetch('/data.json'),
+        element: <ExploreCutting></ExploreCutting>
       },
       {
-        path:'/explore/:productId',
-        loader:()=>fetch('/data.json'),
-        element:<ProductDetails></ProductDetails>
+        path: '/explore/:productId',
+        loader: () => fetch('/data.json'),
+        element: <ProductDetails></ProductDetails>
       },
       {
-        path:'/blog',
-        
-        element:<Blog></Blog>
+        path: '/blog',
+
+        element: <Blog></Blog>
       },
     ]
   },
@@ -64,5 +64,6 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
+   
   </StrictMode>,
 )

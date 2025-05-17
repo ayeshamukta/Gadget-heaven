@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { useLoaderData } from 'react-router';
 import { BarChart, Bar,Area, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, ComposedChart } from 'recharts';
 
@@ -13,6 +14,7 @@ const Statics = () => {
 
     return (
         <div>
+            <Helmet><title>Gadget Heaven | Statics</title></Helmet>
             <div className='text-white  text-center py-10 space-y-4 bg-[#9538E2]'>
                 <h1 className='font-bold text-4xl  '>Product Details</h1>
                 <p className='text-sm lg:w-[600px] mx-auto'>Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>

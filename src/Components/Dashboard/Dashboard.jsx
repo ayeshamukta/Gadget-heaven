@@ -4,6 +4,8 @@ import { getCartData, getWishList, } from '../Utility/Utility';
 import { useLoaderData } from 'react-router';
 import CartProduct from '../CartProduct/CartProduct';
 import WishProduct from '../WishProduct/WishProduct';
+import { Helmet } from 'react-helmet';
+
 
 const Dashboard = () => {
     const [tabIndex, setTabIndex] = useState(0);
@@ -16,19 +18,27 @@ const Dashboard = () => {
         const cartList = getCartData();
         setCartList(cartList);
 
+        
+
     }, [])
 
 
     const wishList = getWishList()
-    // console.log(wishList);
+    
     let totalPrice = 0;
 
-
-
     let cartListData = allProducts.filter(product => cart_list.includes(product.product_id))
+    
+
+    
     useEffect(()=>
     {
-        setFinalCartList(cartListData)
+       const itemLits = [...cartListData].sort((a,b)=>
+                    a.price - b.price
+        )
+        console.log(itemLits);
+        const orderIds = itemLits.map(item=>item.product_id)
+        
     },[])
     const wishListData = allProducts.filter(product => wishList.includes(product.product_id))
     
@@ -49,12 +59,7 @@ const Dashboard = () => {
 
     const handleSorting=()=>
     {
-        const itemLits = [...cartListData].sort((a,b)=>
-                    a.price - b.price
-        )
-        console.log(itemLits);
-        const orderIds = itemLits.map(item=>item.product_id)
-        console.log(orderIds);
+        
         
         
         
@@ -64,7 +69,7 @@ const Dashboard = () => {
 
     return (
         <div>
-
+            <Helmet><title>Gadget Heaven | Dashboard</title></Helmet>
             <dialog id="my_modal_5" className="modal  modal-bottom sm:modal-middle">
                 <div className="modal-box mx-auto text-center">
                     <div className='text-center'>
