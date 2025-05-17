@@ -73,7 +73,7 @@ const Dashboard = () => {
             <dialog id="my_modal_5" className="modal  modal-bottom sm:modal-middle">
                 <div className="modal-box mx-auto text-center">
                     <div className='text-center'>
-                        <img src="/public/Group.png" alt=""  className='mx-auto w-10'/>
+                        <img src="./Group.png" alt=""  className='mx-auto w-10'/>
                         <h1 className='font-bold'>Payment Successfully</h1>
                         <p>Thanks for purchasing</p>
                         <p>Total: {totalPrice}</p>
