@@ -41,4 +41,4 @@ This project utilizes several core React concepts:
 - **React Router**: Declarative routing for React applications.
 - **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
 - **Vite**: Next-generation frontend tooling for fast and optimized builds.
-- **React Hooks**: `useState`, `useEffect`, `useContext` for state and side-effect management.
+- **React Hooks**: `useState`, `useEffect`, `useLocation`, useLoaderData for state and side-effect management.
